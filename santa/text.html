@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    box-sizing: border-box;
+    }
+    .cointainer{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+    .box{
+        width: 70%;
+        height: 70%;
+        border-radius: 20px;
+        background-color: snow;
+        position: absolute;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+
+    }
+    header{
+        display: flex;
+    }
+    #one{
+        display: flex;
+        width: 30%;
+        height: 10%;
+        margin: 2rem;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        
+    }
+    #imgone{
+       width: 40px;
+       height: 40px;
+        border-radius: 30px;
+    }
+    nav{
+        display: flex;
+        width: 35%;
+        height: 10%;
+        margin: 2.4rem;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+
+    }
+    nav,a{
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+
+    }
+    #nav1:hover{
+        color:rgb(0, 146, 0);
+        border-bottom: 2.5px red ridge;
+    }
+    #nav2:hover{
+        color:rgb(0, 146, 0);
+        border-bottom: 2.5px red ridge;
+    }
+    #nav3:hover{
+        color:rgb(0, 146, 0);
+        border-bottom: 2.5px red ridge;
+    }
+    #nav4:hover{
+        color:rgb(0, 146, 0);
+        border-bottom: 2.5px red ridge;
+    }
+    #button{
+        display: flex;
+        width: 15%;
+        height: 10%;
+        margin: 1.9rem;
+        align-items: center;
+        font-size: 1.4rem;
+        column-gap: 10px;
+        justify-content: space-between;
+    }
+   
+    #button2{
+        width: 80px;
+        height: 40px;
+        border: none;
+        background-color: snow;
+        font-size: 1.4rem;
+        font-weight: bolder;
+
+    }
+    .button1{
+        width: 100px;
+        height: 40px;
+        border: none;
+        background-color:rgb(0, 146, 0);
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-radius: 10px;
+        color: snow;
+        
+    }
+    .card{
+        width: 100%;
+        height: 70%;
+        display: grid;
+        grid-template-rows:repeat(5,1fr);
+        grid-template-columns:repeat(4,1fr);
+       
+        position: absolute;
+      margin-top: 2rem;
+        
+
+    }
+    .greet{
+        grid-column-start:1 ;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding-left: 1.1rem;
+        font-size: 2.1rem;
+
+    }
+    #santa{
+        width: 500px;
+        height: 400px;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 6;
+
+        align-self: center;
+      place-self:center;
+      border-radius: 50%;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+    }
+    .line{
+        position: relative;
+        top: 300px;
+        padding-left: 1.1rem;
+        font-weight: bold;
+    }
+    .butt{width: 200px;
+        height: 40px;
+        border: none;
+        background-color:rgb(0, 146, 0);
+        font-size: 1.4rem;
+        border-radius: 10px;
+        color: snow;
+        margin-top: 1.2rem;
+    }
+    #end{
+      position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 40%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: 120px;
+      
+
+    }
+    #end1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 40%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: 120px;
+        left: 140px;
+
+    }
+   
+    #end2{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 40%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: 120px;
+        left: 260px;
+    }
+    #end3{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 40%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: 120px;
+        left: 380px;
+    }
+
+   
+    
+</style>
+<body>
+    <div class="cointainer">
+       <img src="one.jpg" alt="">
+       <div class="box">
+        <header>
+            <div id="one">
+                <img src="png-transparent-gift-card-santa-claus-gift-shop-santa-gifts-free-game-certificate-miscellaneous-ribbon-santa-claus.png" alt="" id="imgone">
+               
+                <p style="color:green ;">Santa's <p style="color: red;">Gift</p><p style="color: green;">Hub </p></p>
+            </div>
+            <nav>
+                <a href="#" id="nav1">Home</a>
+                <a href="#" id="nav2">Popular</a>
+                <a href="#" id="nav3">Gifts</a>
+                <a href="#" id="nav4">Cards</a>
+            </nav>
+            <div id="button">
+                <button style="color: black;" id="button2">Sign In</button>
+                <button class="button1">Sign Up</button>
+            </div>
+        </header>
+        
+            <div class="card">
+                <div class="greet">
+                    <h1>Greetings <br>Santa is coming,<br> Dear Friends</h1> 
+                </div>
+                
+                    <img src="santa-claus-3d-8419053_1280.webp" alt="" id="santa"> 
+            </div>
+            <div class="line">
+                <p>Find the perfect holiday gift for everyone on your list this year ,no matter <br>whats your bugdet.
+                </p>
+                <button class="butt">Explore Now</button>
+                <div>
+                <img src="images.jpeg" alt="" id="end">
+                <img src="images (1).jpeg" alt="" id="end1">
+                <img src="images (2).jpeg" alt="" id="end2">
+                <img src="low.webp" alt="" id="end3">
+                </div>
+                
+               
+            </div>
+       </div>
+      
+      
+          
+       
+       
+    </div>
+</body>
+</html>
